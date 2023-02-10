@@ -1,0 +1,63 @@
+.header__logo {
+    text-decoration: none;
+    color: #300c0c;
+    font-size: 30px;
+    font-weight: 400;
+    font-family: "Finger Paint";
+    text-transform: uppercase;
+    padding-left: 30px;
+    backface-visibility: hidden;
+}
+
+.header__logo:hover {
+    text-shadow: 0 0 0 rgb(149, 56, 56);
+    animation: smoky 5s 0.2s both;
+}
+
+
+@media (max-width: 634px) {
+.header__logo{
+    font-size: 25px;
+    }
+    }
+
+@media (max-width: 500px) {
+.header__logo{
+    font-size: 30px;
+    padding-left: 0;
+    margin: 0;
+    }
+    }
+
+    .header__logo:nth-child(even){
+        animation-name: smoky-mirror;
+    }
+
+    @keyframes smoky {
+        60% {
+          text-shadow: 0 0 40px whitesmoke;
+        }
+        to {
+          transform:
+            translate3d(15rem,-8rem,0)
+            rotate(-40deg)
+            skewX(70deg)
+            scale(1.5);
+          text-shadow: 0 0 20px whitesmoke;
+          opacity: 0;
+        }
+      }
+      
+      @keyframes smoky-mirror {
+        60% {
+          text-shadow: 0 0 40px whitesmoke; }
+        to {
+          transform:
+            translate3d(18rem,-8rem,0)
+            rotate(-40deg) 
+            skewX(-70deg)
+            scale(2);
+           text-shadow: 0 0 20px whitesmoke;
+          opacity: 0;
+        }
+      }

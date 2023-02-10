@@ -1,0 +1,8 @@
+.page {
+        width: 100%;
+        box-sizing: border-box;
+        background-color: #3A4149;;
+        margin: auto;
+        font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif;
+        overflow-x: hidden;
+}
